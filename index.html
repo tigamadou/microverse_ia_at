@@ -8,50 +8,96 @@
       body{
         text-align:center;
       }
+
+      @media(max-width: 1024px){
+        #navbar{
+          height: 150px;
+        }
+        #navbar ul{
+          display: block;
+        }
+      }
     </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <nav>
-      <ul id='navbar'>
-        <li><a href="#welcome-section">Welcome</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
+    <nav id='navbar'>
+      <div class="container">
+        <ul >
+          <li><a href="#welcome-section">Welcome </a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+
     </nav>
 
-    <div id="welcome-section" class="section">
-      <h1>Welcome</h1>
+    <div id="welcome-section" class="hero">
+      <div class="overlay">
+        <h1>Welcome to Machu Pichu</h1>
+        <p>
+          <a href="https://github.com/genzaraki" class="button" target="_blank" id="profile-link">GitHub</a>
+        </p>
+      </div>
     </div>
 
-<div id="projects" class="section">
-  <h1>Projects</h1>
-    <a href="#" target="_blank" class="project project-tile"></a>
-    <h2>Projects:</h2>
-    <h2>Project 1</h2>
-    <h2>Project 2</h2>
-    <h2>Project 3</h2>
-    <h2>Project 4</h2>
-    <h2>Project 5</h2>
-    <h2>Project 6</h2>
-    <h2>Project 7</h2>
-    <h2>Project 8</h2>
-    <h2>Project 9</h2>
-    <h2>Project 10</h2>
-    <h2>Project 11</h2>
-    <h2>Project 12</h2>
-    <h2>Project 13</h2>
-    <h2>Project 14</h2>
-    <h2>Project 15</h2>
-    <h2>Project 16</h2>
+<div class="hero" id="who-are-we">
+  <div class="container">
+    <h3 style="font-size:26px;margin-bottom:30px;">Who are we</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+</div>
+<div id="projects" class="hero">
+  <div class="container">
+    <h2 style="font-size:26px;margin-bottom:30px;">Our Projects</h2>
+    <div class="projectlist">
+      <div class="project-tile">
+        <div class="project-image">
+          <img src="https://placeimg.com/200/200/any?p=1" alt="project-image">
+        </div>
+        <div class="project-description">
+          <h3 class="title">Project title</h3>
+          <a href="#">More Details</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <div class="project-image">
+          <img src="https://placeimg.com/200/200/any?p=2" alt="project-image">
+        </div>
+        <div class="project-description">
+          <h3 class="title">Project 2 title</h3>
+          <a href="#">More Details</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <div class="project-image">
+          <img src="https://placeimg.com/200/200/any?p=3" alt="project-image">
+        </div>
+        <div class="project-description">
+          <h3 class="title">Project 3 title</h3>
+          <a href="#">More Details</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <div class="project-image">
+          <img src="https://placeimg.com/200/200/any?p=4" alt="project-image">
+        </div>
+        <div class="project-description">
+          <h3 class="title">Project 4 title</h3>
+          <a href="#">More Details</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 
 </div>
 
-<div id="contact-section" class="section">
-  <h1>Contact Me</h1>
-  <a id="profile-link" href="#" target="_blank">
-</div>
+
     <script  src="js/index.js"></script>
   </body>
 </html>

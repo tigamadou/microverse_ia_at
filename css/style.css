@@ -1,0 +1,86 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  //padding-top: 50px;
+}
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.button{
+  background: #fff;
+  padding: .75rem;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 4px;
+}
+#welcome-section{
+  height: 100vh;
+  background-color: #1abc9c;
+  background-image: url('../images/welcome.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome-section h1{
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.hero{
+  padding: 1rem;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+#navbar{
+  position: fixed;
+  top: 0px;left: 0px;
+  right: 0px;
+  height: 50px;
+  background: #fff;
+}
+#navbar ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+#navbar ul li{
+  line-height: 50px;
+}
+#navbar ul li a{
+  text-decoration: none;
+  color: #16a085;
+  font-weight: 800;
+}
+#who-are-we{
+  background: #f5f5f5;
+}
+#projects{
+
+}
+.projectlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.projectlist .project-tile{
+
+  flex-grow: 1;
+  padding: 1rem;
+}
+.projectlist .project-tile .project-image {
+  margin-bottom: 30px;
+}
+.projectlist .project-tile .project-description .title{
+  font-size: 1.5rem;
+}
